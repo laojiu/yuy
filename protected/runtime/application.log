@@ -1,0 +1,257 @@
+2013/09/10 16:29:00 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (H:\zend\yuy\protected\views\layouts\main.php:51)
+Stack trace:
+#0 H:\zend\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 H:\zend\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 H:\zend\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 H:\zend\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 H:\zend\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 H:\zend\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 H:\zend\yuy\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 H:\zend\yii\framework\web\CBaseController.php(126): require()
+#8 H:\zend\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 H:\zend\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 H:\zend\yuy\protected\controllers\SiteController.php(32): SiteController->render()
+#11 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 H:\zend\yuy\index.php(13): CWebApplication->run()
+REQUEST_URI=/yuy/
+in H:\zend\yuy\protected\views\layouts\main.php (51)
+in H:\zend\yuy\protected\views\layouts\column1.php (6)
+in H:\zend\yuy\protected\controllers\SiteController.php (32)
+2013/09/22 18:31:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend
+---
+2013/09/22 18:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend/default".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/default')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend/default
+---
+2013/09/22 18:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend/index".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/index')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend/index
+---
+2013/09/22 18:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend/default/index".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/default...')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend/default/index
+---
+2013/09/22 18:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend/default/index".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/default...')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend/default/index
+---
+2013/09/22 19:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend/default/index".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/default...')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend/default/index
+---
+2013/09/22 19:01:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend/default/index".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/default...')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend/default/index
+---
+2013/09/22 19:13:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend/default/index".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/default...')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend/default/index
+---
+2013/09/22 19:16:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backend".' in H:\zend\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('backend')
+#1 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\zend\yuy\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/yuy/index.php?r=backend
+---
+2013/09/22 21:31:34 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.fdName" is not defined.' in H:\zend\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 H:\zend\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('fdName')
+#1 H:\zend\yuy\themes\classic\views\layouts\main.php(54): CWebUser->__get('fdName')
+#2 H:\zend\yii\framework\web\CBaseController.php(126): require('H:\zend\yuy\the...')
+#3 H:\zend\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('H:\zend\yuy\the...', Array, true)
+#4 H:\zend\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('H:\zend\yuy\the...', Array, true)
+#5 H:\zend\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 H:\zend\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 H:\zend\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 H:\zend\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 H:\zend\yuy\themes\classic\views\layouts\column1.php(6): CBaseController->endContent()
+#10 H:\zend\yii\framework\web\CBaseController.php(126): require('H:\zend\yuy\the...')
+#11 H:\zend\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('H:\zend\yuy\the...', Array, true)
+#12 H:\zend\yii\framework\web\CController.php(784): CBaseController->renderFile('H:\zend\yuy\the...', Array, true)
+#13 H:\zend\yuy\protected\controllers\SiteController.php(32): CController->render('index')
+#14 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 H:\zend\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 H:\zend\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 H:\zend\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 H:\zend\yuy\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/yuy/
+HTTP_REFERER=http://localhost/yuy/index.php
+---
+2013/09/23 22:31:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1102 Incorrect database name ''. The SQL statement executed was: SHOW FULL COLUMNS FROM ``.`tbUser`.
+in H:\zend\yuy\index.php (14)
+2013/09/23 22:31:36 [error] [exception.CDbException] exception 'CDbException' with message 'The table ".tbUser" for active record class "User" cannot be found in the database.' in H:\zend\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 H:\zend\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#1 H:\zend\yii\framework\db\ar\CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 H:\zend\yii\framework\gii\generators\crud\CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 H:\zend\yii\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 H:\zend\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 H:\zend\yii\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#6 H:\zend\yii\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#7 H:\zend\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 H:\zend\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 H:\zend\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 H:\zend\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\zend\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\zend\yuy\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/yuy/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/yuy/index.php?r=gii/crud/index
+---
+2013/09/27 00:00:43 [error] [php] include_once(ucenter.php): failed to open stream: No such file or directory (H:\zend\yuy\protected\components\UserIdentity.php:37)
+Stack trace:
+#0 H:\zend\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#1 H:\zend\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#2 H:\zend\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#3 H:\zend\yuy\protected\controllers\SiteController.php(94): LoginForm->validate()
+#4 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\zend\yuy\index.php(14): CWebApplication->run()
+REQUEST_URI=/yuy/index.php?r=site/login
+in H:\zend\yuy\protected\components\UserIdentity.php (37)
+in H:\zend\yuy\protected\components\UserIdentity.php (37)
+in H:\zend\yuy\protected\models\LoginForm.php (52)
+2013/09/27 00:17:21 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (H:\zend\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 H:\zend\yuy\protected\controllers\SiteController.php(80): spl_autoload_call()
+#1 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 H:\zend\yuy\index.php(14): CWebApplication->run()
+REQUEST_URI=/yuy/index.php?r=site/login
+in H:\zend\yuy\protected\controllers\SiteController.php (80)
+in H:\zend\yuy\index.php (14)
+2013/09/27 00:19:51 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (H:\zend\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 H:\zend\yuy\protected\controllers\SiteController.php(80): spl_autoload_call()
+#1 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 H:\zend\yuy\index.php(14): CWebApplication->run()
+REQUEST_URI=/yuy/index.php?r=site/login
+in H:\zend\yuy\protected\controllers\SiteController.php (80)
+in H:\zend\yuy\index.php (14)
+2013/09/27 00:20:25 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (H:\zend\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 H:\zend\yuy\protected\controllers\SiteController.php(80): spl_autoload_call()
+#1 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 H:\zend\yuy\index.php(14): CWebApplication->run()
+REQUEST_URI=/yuy/index.php?r=site/login
+in H:\zend\yuy\protected\controllers\SiteController.php (80)
+in H:\zend\yuy\index.php (14)
+2013/09/27 00:20:39 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (H:\zend\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 H:\zend\yuy\protected\controllers\SiteController.php(80): spl_autoload_call()
+#1 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 H:\zend\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 H:\zend\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 H:\zend\yuy\index.php(14): CWebApplication->run()
+REQUEST_URI=/yuy/index.php?r=site/login
+in H:\zend\yuy\protected\controllers\SiteController.php (80)
+in H:\zend\yuy\index.php (14)
+2013/09/27 01:08:30 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (H:\zend\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 H:\zend\yuy\protected\controllers\SiteController.php(80): spl_autoload_call()
+#1 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 H:\zend\yii\framework\web\CWebApplication.php(141): YUYApplication->runController()
+#7 H:\zend\yii\framework\base\CApplication.php(180): YUYApplication->processRequest()
+#8 H:\zend\yuy\index.php(18): YUYApplication->run()
+REQUEST_URI=/yuy/index.php?r=site/login
+in H:\zend\yuy\protected\controllers\SiteController.php (80)
+in H:\zend\yuy\index.php (18)
+2013/09/27 01:32:34 [error] [php] require_once(../models/services/User.php): failed to open stream: No such file or directory (H:\zend\yuy\protected\components\UserIdentity.php:3)
+Stack trace:
+#0 unknown(0): autoload()
+#1 H:\zend\yuy\protected\models\form\service\LoginForm.php(58): spl_autoload_call()
+#2 H:\zend\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 H:\zend\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 H:\zend\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 H:\zend\yuy\protected\controllers\SiteController.php(94): LoginForm->validate()
+#6 H:\zend\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 H:\zend\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 H:\zend\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 H:\zend\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 H:\zend\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 H:\zend\yii\framework\web\CWebApplication.php(141): YUYApplication->runController()
+#12 H:\zend\yii\framework\base\CApplication.php(180): YUYApplication->processRequest()
+#13 H:\zend\yuy\index.php(18): YUYApplication->run()
+REQUEST_URI=/yuy/index.php?r=site/login
+in H:\zend\yuy\protected\components\UserIdentity.php (3)
+in H:\zend\yuy\protected\components\UserIdentity.php (3)
+in H:\zend\yuy\protected\models\form\service\LoginForm.php (58)
