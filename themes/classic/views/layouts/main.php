@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="<?php echo yii::app()->theme->baseUrl ?>/assets/bootstrap/ico/favicon.png">
-	
+
 	<title>玉缘后台管理</title>
 
 	<!-- Bootstrap core CSS -->
@@ -21,8 +21,8 @@
       <script src="<?php echo yii::app()->theme->baseUrl ?>/assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-	
-	
+
+
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -39,15 +39,15 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-           
+
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="../navbar/">Default</a></li>
             <li><a href="../navbar-static-top/">Static top</a></li>
             <li class="active"><a href="./">Fixed top</a></li>
-            
+
              <?php if(Yii::app()->user->isGuest):?>
-            	<li><a href="<?php echo Yii::app()->createUrl('site/login')?>">登陆</a></li>
+            	<li><a href="<?php echo Yii::app()->createUrl('user/login')?>">登陆</a></li>
             <?php endif?>
             <?php if(!Yii::app()->user->isGuest):?>
             <li class="dropdown">

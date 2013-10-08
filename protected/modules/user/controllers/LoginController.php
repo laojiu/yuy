@@ -1,7 +1,13 @@
 <?php
 class LoginController extends Controller {
 	public $defaultAction = 'login';
-	
+
+
+	public function actionXXX(){
+		echo 'dfsdf';
+		exit;
+	}
+
 	/**
 	 * Displays the login page
 	 */
@@ -22,7 +28,7 @@ class LoginController extends Controller {
 			}
 			// display the login form
 			$this->render ( '/user/login', array (
-					'model' => $model 
+					'model' => $model
 			) );
 		} else
 			$this->redirect ( Yii::app ()->controller->module->returnUrl );

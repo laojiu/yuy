@@ -2,7 +2,7 @@
 
 $host='127.0.0.1';
 $dbu='root';
-$dbp='toor';
+$dbp='root';
 
 define('IS_SYNC', false);
 defined('YII_DEBUG') or define('YII_DEBUG',true);
@@ -16,7 +16,7 @@ return CMap::mergeArray(
 	'name'=>'My Web Application',
 	'theme'=>'classic',
 	'language'=>'zh_cn',//中文提示
-				
+
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -33,7 +33,7 @@ return CMap::mergeArray(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		'back'=>array(
-			'class'=>'application.modules.back.BackModule'	
+			'class'=>'application.modules.back.BackModule'
 		),
 		'user'=>array(
 				'tableUsers' => 'wksvc.tbAuthUsers',
@@ -41,35 +41,35 @@ return CMap::mergeArray(
 				'tableProfileFields' => 'wksvc.tbAuthProfilesFields',
 				# encrypting method (php hash function)
 				'hash' => 'md5',
-		
+
 				# send activation email
 				'sendActivationMail' => true,
-		
+
 				# allow access for non-activated users
 				'loginNotActiv' => false,
-		
+
 				# activate user on registration (only sendActivationMail = false)
 				'activeAfterRegister' => false,
-		
+
 				# automatically login from registration
 				'autoLogin' => true,
-		
+
 				# registration path
 				'registrationUrl' => array('/user/registration'),
-		
+
 				# recovery password path
 				'recoveryUrl' => array('/user/recovery'),
-		
+
 				# login form path
 				'loginUrl' => array('/user/login'),
-		
+
 				# page after login
 				'returnUrl' => array('/user/profile'),
-		
+
 				# page after logout
 				'returnLogoutUrl' => array('/user/login'),
 		),
-		
+
 		//Modules Rights
 		'rights'=>array(
 				'superuserName'=>'Admin', // Name of the role with super user privileges.
@@ -81,7 +81,7 @@ return CMap::mergeArray(
 				'displayDescription'=>true,  // Whether to use item description instead of name.
 				'flashSuccessKey'=>'RightsSuccess', // Key to use for setting success flash messages.
 				'flashErrorKey'=>'RightsError', // Key to use for setting error flash messages.
-		
+
 				'baseUrl'=>'/rights', // Base URL for Rights. Change if module is nested.
 				'layout'=>'rights.views.layouts.main',  // Layout to use for displaying Rights.
 				'appLayout'=>'', // Application layout.
@@ -111,16 +111,19 @@ return CMap::mergeArray(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'<module:\w+>/<controller:\w+>/<action:\w+>'=>'<module>/<controller>/<action>',
+
+
 			),
+			'urlSuffix'=>'.html',
 		),
-		*/
 // 		'db'=>array(
 // 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 // 		),
