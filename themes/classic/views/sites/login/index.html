@@ -1,5 +1,7 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,19 +25,18 @@
   </head>
 
   <body>
-
     <div class="container">
-
+    <?php echo CHtml::beginForm(); ?>
       <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <h2 class="form-signin-heading">请登陆</h2>
         <input type="text" class="form-control" placeholder="Email address" autofocus>
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" placeholder="密&#12288;码：">
         <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
+          <input type="checkbox" value="remember-me"> 记住我
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <label><?php echo CHtml::errorSummary($model); ?></label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
       </form>
-
     </div> <!-- /container -->
 
 

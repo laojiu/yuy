@@ -22,6 +22,7 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
+		
 		$username=strtolower($this->username);
 		//输入类型判断
 		if($this->checkEmail($username)){
@@ -31,8 +32,6 @@ class UserIdentity extends CUserIdentity
 		}else{
 			$type = 'username';
 		}
-
-
 
 		if(IS_SYNC && $type == 'username'){//如果开启同步登陆并且使用用户名登陆
 			Yii::import('application.vendors.*');
