@@ -158,7 +158,7 @@ class AdminController extends Controller
      * Performs the AJAX validation.
      * @param CModel the model to be validated
      */
-    protected function performAjaxValidation($validate)
+    public function performAjaxValidation($validate)
     {
         if(isset($_POST['ajax']) && $_POST['ajax']==='user-form')
         {
